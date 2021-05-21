@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extras</title>
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/clima.css">
+    
+</head>
+<body background="img/fondopatitas2.png">
+    
+
+    <div class="container">
+        <div class="row fondoNaranja navegacion">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link auspiciadores" href="index.html">INICIO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link auspiciadores" href="contacto.html">CONTACTENOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link auspiciadores" href="clima.html">EXTRAS</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="row margenTop10 centrar">
+            <h2>Obtención de Clima</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ingrese Ciudad">
+                </div>
+                <button id="consultaClima" type="button" class="btn btn-primary margenTop10" onclick="cargar_clima()">Consultar
+                    Clima</button>
+            </form>
+
+            <div id="datosDelClima">
+                <p id="datosCiudad">La temperatura para <span id="ubicacion"></span> es : <span
+                        id="temperatura"></span>º</p>
+                <p id="datosCiudad">Humedad Relativa <span id="humedad"></span> % Porciento</p>
+                <p id="datosCiudad">Velocidad del Viento <span id="velocidadviento"></span> KM/H</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/scriptDelClima.js"></script>
+    
+</body>
+</html>

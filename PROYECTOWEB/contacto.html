@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactenos</title>
+
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="css/contacto.css">
+
+</head>
+<body background="img/fondopatitas2.png">
+
+    <nav class="navegacion">
+        <div class="row fondoNaranja">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                <a class="nav-link letraMenu" href="index.html"><strong>INICIO</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link letraMenu" href="contacto.html"><strong>CONTACTENOS</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link letraMenu" href="clima.html"><strong>EXTRAS</strong></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div>
+        <h2>Ingresar sus datos de contacto</h2>
+    </div>
+
+    <div class="row margenTop10" >
+        <form name="formulario" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required name="nombre" placeholder="Ingresar Nombre">
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="number" class="form-control" id="edad" required min="18" max="70" name="edad" placeholder="Ingresar Edad">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" class="form-control" id="correo" required name="correo" placeholder="Ingresar Correo electrónico">
+            </div>
+            <div class="form-group">
+                <label for="dir">Mensaje</label>
+                <p><textarea name="text" id="mensaje" cols="50" rows="5" placeholder="Redactar el mensaje"></textarea></p>
+            </div>
+            <div>
+                <label for="dir">Nivel de importancia del mensaje</label>
+                <input type="range" list="tickmarks">
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="10">
+                    <option value="20">
+                    <option value="30">
+                    <option value="40">
+                    <option value="50">
+                    <option value="60">
+                    <option value="70">
+                    <option value="80">
+                    <option value="90">
+                    <option value="100">
+                </datalist>
+            </div>
+            <div class="form-group">
+                <p>
+                    
+                </p>
+                <label for="casilla">Acepta condiciones</label>
+                <input type="checkbox" class="form-check" id="casilla" required name="casilla" >
+            </div>
+            <div>
+                <!--<button type="button" class="btn btn-primary" onclick="validar_envio()">Enviar</button>-->
+                <button type="submit" class="btn btn-primary" onclick="validar_envio()" >Enviar</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/miscript.js"></script>
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/miscriptJQ.js"></script>
+</body>
+</html>

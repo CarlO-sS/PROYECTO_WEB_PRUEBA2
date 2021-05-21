@@ -1,0 +1,60 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+}
+
+.navegacion{
+    background-color: cornflowerblue;
+    margin-right: auto;
+}
+ 
+a {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+
+.letraMenu {
+    font-family: 'Courier New', Courier, monospace;
+    font: bold;
+    color: white;
+}
+
+
+.centrar {
+    text-align: center;
+}
+
+.margenTop10 {
+    margin-top: 2%;
+}
+
+
+h1 {
+    background-color: cornflowerblue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+
+.navegacion a:hover {
+    background-color: cornflowerblue;
+    text-align: center;
+}
+
+
+
+
+
+
